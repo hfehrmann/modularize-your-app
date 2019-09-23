@@ -18,6 +18,7 @@ public class LoginCoordinator {
     }
 
     public func start() {
-
+        let loginController = LoginScreenViewController(coordinator: self)
+        rootController.present(loginController, animated: true)
     }
 }
