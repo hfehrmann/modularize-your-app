@@ -1,23 +1,23 @@
 //
-//  OnboardingCoordinator.swift
-//  Modularizing
+//  LoginCoordinator.swift
+//  Login
 //
-//  Created by Hans Fehrmann on 17/09/19.
+//  Created by Hans Fehrmann on 23/09/19.
 //  Copyright © 2019 Hans Fehrmann. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class OnboardingCoordinator {
+public class LoginCoordinator {
 
     let rootController: UIViewController
 
-    init(controller: UIViewController) {
+    public init(controller: UIViewController) {
         self.rootController = controller
     }
 
-    func start() {
+    public func start() {
 
     }
 }

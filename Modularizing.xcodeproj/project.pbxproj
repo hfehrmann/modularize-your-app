@@ -10,11 +10,75 @@
 		1033D1602331AD05008AD86B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D15F2331AD05008AD86B /* AppDelegate.swift */; };
 		1033D1672331AD08008AD86B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1033D1662331AD08008AD86B /* Assets.xcassets */; };
 		1033D16A2331AD08008AD86B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1033D1682331AD08008AD86B /* LaunchScreen.storyboard */; };
-		1033D1752331ADD5008AD86B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D1742331ADD5008AD86B /* LoginCoordinator.swift */; };
-		1033D1772331AE01008AD86B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D1762331AE01008AD86B /* OnboardingCoordinator.swift */; };
-		1033D1792331AE0C008AD86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D1782331AE0C008AD86B /* DashboardCoordinator.swift */; };
 		1033D17B2331AE17008AD86B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D17A2331AE17008AD86B /* AppCoordinator.swift */; };
+		1033D1E123393538008AD86B /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D1DB233934EC008AD86B /* Login.framework */; };
+		1033D1E223393538008AD86B /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D1DB233934EC008AD86B /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1033D22423394264008AD86B /* Onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D200233940FC008AD86B /* Onboarding.framework */; };
+		1033D22523394264008AD86B /* Onboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D200233940FC008AD86B /* Onboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1033D22823394264008AD86B /* Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D220233941B4008AD86B /* Dashboard.framework */; };
+		1033D22923394264008AD86B /* Dashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D220233941B4008AD86B /* Dashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1033D1DA233934EC008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D1D6233934EC008AD86B /* Login.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1033D1CA233934BF008AD86B;
+			remoteInfo = Login;
+		};
+		1033D1E323393538008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D1D6233934EC008AD86B /* Login.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1033D1C9233934BF008AD86B;
+			remoteInfo = Login;
+		};
+		1033D1FF233940FC008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1033D1F0233940EE008AD86B;
+			remoteInfo = Onboarding;
+		};
+		1033D21F233941B4008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D21B233941B4008AD86B /* Dashboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1033D2102339417B008AD86B;
+			remoteInfo = Dashboard;
+		};
+		1033D22623394264008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1033D1EF233940EE008AD86B;
+			remoteInfo = Onboarding;
+		};
+		1033D22A23394264008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D21B233941B4008AD86B /* Dashboard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1033D20F2339417B008AD86B;
+			remoteInfo = Dashboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1033D1E523393539008AD86B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1033D22923394264008AD86B /* Dashboard.framework in Embed Frameworks */,
+				1033D1E223393538008AD86B /* Login.framework in Embed Frameworks */,
+				1033D22523394264008AD86B /* Onboarding.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1033D15C2331AD05008AD86B /* Modularizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modularizing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +86,10 @@
 		1033D1662331AD08008AD86B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1033D1692331AD08008AD86B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1033D16B2331AD08008AD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1033D1742331ADD5008AD86B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
-		1033D1762331AE01008AD86B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		1033D1782331AE0C008AD86B /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 		1033D17A2331AE17008AD86B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1033D1D6233934EC008AD86B /* Login.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Login.xcodeproj; path = Login/Login.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Onboarding.xcodeproj; path = Onboarding/Onboarding.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1033D21B233941B4008AD86B /* Dashboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dashboard.xcodeproj; path = Dashboard/Dashboard.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1033D22823394264008AD86B /* Dashboard.framework in Frameworks */,
+				1033D1E123393538008AD86B /* Login.framework in Frameworks */,
+				1033D22423394264008AD86B /* Onboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +125,9 @@
 		1033D15E2331AD05008AD86B /* Modularizing */ = {
 			isa = PBXGroup;
 			children = (
-				1033D1712331AD63008AD86B /* Login */,
-				1033D1722331AD68008AD86B /* Onboarding */,
-				1033D1732331AD70008AD86B /* Dashboard */,
+				1033D1D6233934EC008AD86B /* Login.xcodeproj */,
+				1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */,
+				1033D21B233941B4008AD86B /* Dashboard.xcodeproj */,
 				1033D15F2331AD05008AD86B /* AppDelegate.swift */,
 				1033D17A2331AE17008AD86B /* AppCoordinator.swift */,
 				1033D1662331AD08008AD86B /* Assets.xcassets */,
@@ -70,28 +137,28 @@
 			path = Modularizing;
 			sourceTree = "<group>";
 		};
-		1033D1712331AD63008AD86B /* Login */ = {
+		1033D1D7233934EC008AD86B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1033D1742331ADD5008AD86B /* LoginCoordinator.swift */,
+				1033D1DB233934EC008AD86B /* Login.framework */,
 			);
-			path = Login;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		1033D1722331AD68008AD86B /* Onboarding */ = {
+		1033D1FC233940FC008AD86B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1033D1762331AE01008AD86B /* OnboardingCoordinator.swift */,
+				1033D200233940FC008AD86B /* Onboarding.framework */,
 			);
-			path = Onboarding;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		1033D1732331AD70008AD86B /* Dashboard */ = {
+		1033D21C233941B4008AD86B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1033D1782331AE0C008AD86B /* DashboardCoordinator.swift */,
+				1033D220233941B4008AD86B /* Dashboard.framework */,
 			);
-			path = Dashboard;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +171,14 @@
 				1033D1582331AD05008AD86B /* Sources */,
 				1033D1592331AD05008AD86B /* Frameworks */,
 				1033D15A2331AD05008AD86B /* Resources */,
+				1033D1E523393539008AD86B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1033D1E423393538008AD86B /* PBXTargetDependency */,
+				1033D22723394264008AD86B /* PBXTargetDependency */,
+				1033D22B23394264008AD86B /* PBXTargetDependency */,
 			);
 			name = Modularizing;
 			productName = Modularizing;
@@ -140,12 +211,50 @@
 			mainGroup = 1033D1532331AD05008AD86B;
 			productRefGroup = 1033D15D2331AD05008AD86B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1033D21C233941B4008AD86B /* Products */;
+					ProjectRef = 1033D21B233941B4008AD86B /* Dashboard.xcodeproj */;
+				},
+				{
+					ProductGroup = 1033D1D7233934EC008AD86B /* Products */;
+					ProjectRef = 1033D1D6233934EC008AD86B /* Login.xcodeproj */;
+				},
+				{
+					ProductGroup = 1033D1FC233940FC008AD86B /* Products */;
+					ProjectRef = 1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1033D15B2331AD05008AD86B /* Modularizing */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1033D1DB233934EC008AD86B /* Login.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Login.framework;
+			remoteRef = 1033D1DA233934EC008AD86B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1033D200233940FC008AD86B /* Onboarding.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Onboarding.framework;
+			remoteRef = 1033D1FF233940FC008AD86B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1033D220233941B4008AD86B /* Dashboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dashboard.framework;
+			remoteRef = 1033D21F233941B4008AD86B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1033D15A2331AD05008AD86B /* Resources */ = {
@@ -164,15 +273,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1033D1752331ADD5008AD86B /* LoginCoordinator.swift in Sources */,
-				1033D1792331AE0C008AD86B /* DashboardCoordinator.swift in Sources */,
 				1033D17B2331AE17008AD86B /* AppCoordinator.swift in Sources */,
-				1033D1772331AE01008AD86B /* OnboardingCoordinator.swift in Sources */,
 				1033D1602331AD05008AD86B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1033D1E423393538008AD86B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Login;
+			targetProxy = 1033D1E323393538008AD86B /* PBXContainerItemProxy */;
+		};
+		1033D22723394264008AD86B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Onboarding;
+			targetProxy = 1033D22623394264008AD86B /* PBXContainerItemProxy */;
+		};
+		1033D22B23394264008AD86B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dashboard;
+			targetProxy = 1033D22A23394264008AD86B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1033D1682331AD08008AD86B /* LaunchScreen.storyboard */ = {
@@ -305,6 +429,7 @@
 		1033D16F2331AD08008AD86B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Modularizing/Info.plist;
@@ -322,6 +447,7 @@
 		1033D1702331AD08008AD86B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Modularizing/Info.plist;
