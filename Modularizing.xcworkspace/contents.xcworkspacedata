@@ -4,4 +4,16 @@
    <FileRef
       location = "group:Modularizing.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Dashboard/Dashboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Login/Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Onboarding/Onboarding.xcodeproj">
+   </FileRef>
 </Workspace>
