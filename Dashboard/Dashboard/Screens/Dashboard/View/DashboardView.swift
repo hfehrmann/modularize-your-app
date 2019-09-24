@@ -96,7 +96,7 @@ private extension DashboardView {
 private extension DashboardView {
 
     func configureView() {
-        self.backgroundColor = UIColor(hue: 0, saturation: 0, brightness: 0.95, alpha: 1)
+        self.backgroundColor = .gray95
 
         self.addSubview(stackView)
         self.stackView.addArrangedSubview(self.flow1)
