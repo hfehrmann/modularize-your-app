@@ -11,17 +11,25 @@ import UIKit
 import SnapKit
 import Core
 
-protocol DashboardViewDelegate: AnyObject {
-    func dashboardViewDidClickFlow1(_ dashboardView: DashboardView)
-    func dashboardViewDidClickFlow2(_ dashboardView: DashboardView)
-    func dashboardViewDidClickLogout(_ dashboardView: DashboardView)
+protocol Flow1ViewDelegate: AnyObject {
+    func flow1ViewDidClickFlow1(_ dashboardView: Flow1View)
+    func flow1ViewDidClickFlow2(_ dashboardView: Flow1View)
+    func flow1ViewDidClickLogout(_ dashboardView: Flow1View)
 }
 
-class DashboardView: UIView {
+class Flow1View: UIView {
 
     private enum Constraints {
         static var rounderCorner: CGFloat { return 4 }
     }
+
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.textAlignment = .center
+        label.text = "Flow1 -> Nº \(self.numberToDisplay)"
+        return label
+    }()
 
     private lazy var stackView: UIStackView = {
         let view = UIStackView()
@@ -57,9 +65,11 @@ class DashboardView: UIView {
         return button
     }()
 
-    weak var delegate: DashboardViewDelegate?
+    private let numberToDisplay: Int
+    weak var delegate: Flow1ViewDelegate?
 
-    init() {
+    init(numberToDisplay: Int) {
+        self.numberToDisplay = numberToDisplay
         super.init(frame: .zero)
         configureView()
     }
@@ -72,36 +82,42 @@ class DashboardView: UIView {
 
 // MARK: - Button targets
 
-private extension DashboardView {
+private extension Flow1View {
 
     @objc
     func didClickFlow1() {
-        self.delegate?.dashboardViewDidClickFlow1(self)
+        self.delegate?.flow1ViewDidClickFlow1(self)
     }
 
     @objc
     func didClickFlow2() {
-        self.delegate?.dashboardViewDidClickFlow2(self)
+        self.delegate?.flow1ViewDidClickFlow2(self)
     }
 
     @objc
     func didClickLogout() {
-        self.delegate?.dashboardViewDidClickLogout(self)
+        self.delegate?.flow1ViewDidClickLogout(self)
     }
 
 }
 
 // MARK: - View Configuration
 
-private extension DashboardView {
+private extension Flow1View {
 
     func configureView() {
-        self.backgroundColor = .gray95
+        self.backgroundColor = .flow1
 
-        self.addSubview(stackView)
+        self.addSubview(self.titleLabel)
+        self.addSubview(self.stackView)
         self.stackView.addArrangedSubview(self.flow1)
         self.stackView.addArrangedSubview(self.flow2)
         self.stackView.addArrangedSubview(self.logoutButton)
+
+        self.titleLabel.snp.makeConstraints { maker in
+            maker.centerXWithinMargins.equalToSuperview()
+            maker.topMargin.equalToSuperview().offset(30)
+        }
 
         self.stackView.snp.makeConstraints { maker in
             maker.bottomMargin.equalToSuperview().offset(-20)
