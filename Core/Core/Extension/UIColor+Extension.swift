@@ -24,5 +24,5 @@ public extension UIColor {
 
     static var flow1: UIColor { return UIColor(red: 188, green: 245, blue: 66, alpha: 1) }
 
-    static var flow2: UIColor { return UIColor(red: 3, green: 136, blue: 252, alpha: 1) }
+    static var flow2: UIColor { return UIColor(red: 255, green: 105, blue: 97, alpha: 1) }
 }
