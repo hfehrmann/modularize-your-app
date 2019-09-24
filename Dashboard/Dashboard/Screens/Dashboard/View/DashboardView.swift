@@ -11,6 +11,12 @@ import UIKit
 import SnapKit
 import Core
 
+protocol DashboardViewDelegate: AnyObject {
+    func dashboardViewDidClickFlow1(_ dashboardView: DashboardView)
+    func dashboardViewDidClickFlow2(_ dashboardView: DashboardView)
+    func dashboardViewDidClickLogout(_ dashboardView: DashboardView)
+}
+
 class DashboardView: UIView {
 
     private enum Constraints {
@@ -29,6 +35,7 @@ class DashboardView: UIView {
         button.setTitle("Flow 1", for: .normal)
         button.backgroundColor = .lightningBlue
         button.layer.cornerRadius = Constraints.rounderCorner
+        button.addTarget(self, action: #selector(self.didClickFlow1), for: .touchUpInside)
         return button
     }()
 
@@ -37,6 +44,7 @@ class DashboardView: UIView {
         button.setTitle("Flow 2", for: .normal)
         button.backgroundColor = .lightningBlue
         button.layer.cornerRadius = Constraints.rounderCorner
+        button.addTarget(self, action: #selector(self.didClickFlow2), for: .touchUpInside)
         return button
     }()
 
@@ -45,8 +53,11 @@ class DashboardView: UIView {
         button.setTitle("Logout", for: .normal)
         button.backgroundColor = .lightningBlue
         button.layer.cornerRadius = Constraints.rounderCorner
+        button.addTarget(self, action: #selector(self.didClickLogout), for: .touchUpInside)
         return button
     }()
+
+    weak var delegate: DashboardViewDelegate?
 
     init() {
         super.init(frame: .zero)
@@ -58,6 +69,29 @@ class DashboardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+// MARK: - Button targets
+
+private extension DashboardView {
+
+    @objc
+    func didClickFlow1() {
+        self.delegate?.dashboardViewDidClickFlow1(self)
+    }
+
+    @objc
+    func didClickFlow2() {
+        self.delegate?.dashboardViewDidClickFlow2(self)
+    }
+
+    @objc
+    func didClickLogout() {
+        self.delegate?.dashboardViewDidClickLogout(self)
+    }
+
+}
+
+// MARK: - View Configuration
 
 private extension DashboardView {
 
