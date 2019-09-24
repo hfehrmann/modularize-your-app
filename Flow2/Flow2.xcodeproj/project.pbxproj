@@ -10,6 +10,7 @@
 		101B7D31233A657A00D95D29 /* Flow2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2C233A657A00D95D29 /* Flow2ViewController.swift */; };
 		101B7D32233A657A00D95D29 /* Flow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2E233A657A00D95D29 /* Flow2View.swift */; };
 		101B7D33233A657A00D95D29 /* Flow2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D30233A657A00D95D29 /* Flow2Coordinator.swift */; };
+		101B7D37233A784200D95D29 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101B7D36233A784200D95D29 /* Core.framework */; };
 		103C36A0233A56E5001ACB39 /* Flow2.h in Headers */ = {isa = PBXBuildFile; fileRef = 103C369E233A56E4001ACB39 /* Flow2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F988E66F7BDB115CD463D06 /* Pods_Flow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58845E47C05D6FBA91B336DA /* Pods_Flow2.framework */; };
 /* End PBXBuildFile section */
@@ -18,6 +19,7 @@
 		101B7D2C233A657A00D95D29 /* Flow2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2ViewController.swift; sourceTree = "<group>"; };
 		101B7D2E233A657A00D95D29 /* Flow2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2View.swift; sourceTree = "<group>"; };
 		101B7D30233A657A00D95D29 /* Flow2Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2Coordinator.swift; sourceTree = "<group>"; };
+		101B7D36233A784200D95D29 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		103C369B233A56E4001ACB39 /* Flow2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		103C369E233A56E4001ACB39 /* Flow2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow2.h; sourceTree = "<group>"; };
 		103C369F233A56E5001ACB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101B7D37233A784200D95D29 /* Core.framework in Frameworks */,
 				4F988E66F7BDB115CD463D06 /* Pods_Flow2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +124,7 @@
 		6B222CDCA1F112E8BD221816 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				101B7D36233A784200D95D29 /* Core.framework */,
 				58845E47C05D6FBA91B336DA /* Pods_Flow2.framework */,
 			);
 			name = Frameworks;

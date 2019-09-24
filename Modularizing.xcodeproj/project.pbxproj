@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101B7D39233A798900D95D29 /* Flow1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C3690233A55CB001ACB39 /* Flow1.framework */; };
+		101B7D3A233A798900D95D29 /* Flow1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103C3690233A55CB001ACB39 /* Flow1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		101B7D3E233A798900D95D29 /* Flow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C36AB233A56F1001ACB39 /* Flow2.framework */; };
+		101B7D3F233A798900D95D29 /* Flow2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103C36AB233A56F1001ACB39 /* Flow2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1033D1602331AD05008AD86B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D15F2331AD05008AD86B /* AppDelegate.swift */; };
 		1033D1672331AD08008AD86B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1033D1662331AD08008AD86B /* Assets.xcassets */; };
 		1033D16A2331AD08008AD86B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1033D1682331AD08008AD86B /* LaunchScreen.storyboard */; };
@@ -23,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		101B7D3B233A798900D95D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 103C368B233A55CB001ACB39 /* Flow1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 103C367F233A55BD001ACB39;
+			remoteInfo = Flow1;
+		};
+		101B7D40233A798900D95D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 103C36A6233A56F1001ACB39 /* Flow2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 103C369A233A56E4001ACB39;
+			remoteInfo = Flow2;
+		};
 		1033D1DA233934EC008AD86B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1033D1D6233934EC008AD86B /* Login.xcodeproj */;
@@ -103,7 +121,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1033D22923394264008AD86B /* Dashboard.framework in Embed Frameworks */,
+				101B7D3F233A798900D95D29 /* Flow2.framework in Embed Frameworks */,
 				1033D1E223393538008AD86B /* Login.framework in Embed Frameworks */,
+				101B7D3A233A798900D95D29 /* Flow1.framework in Embed Frameworks */,
 				1033D22523394264008AD86B /* Onboarding.framework in Embed Frameworks */,
 				103C36592339CE7F001ACB39 /* Core.framework in Embed Frameworks */,
 			);
@@ -135,6 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101B7D3E233A798900D95D29 /* Flow2.framework in Frameworks */,
+				101B7D39233A798900D95D29 /* Flow1.framework in Frameworks */,
 				1033D22823394264008AD86B /* Dashboard.framework in Frameworks */,
 				1033D1E123393538008AD86B /* Login.framework in Frameworks */,
 				1033D22423394264008AD86B /* Onboarding.framework in Frameworks */,
@@ -268,6 +290,8 @@
 				1033D22723394264008AD86B /* PBXTargetDependency */,
 				1033D22B23394264008AD86B /* PBXTargetDependency */,
 				103C365B2339CE7F001ACB39 /* PBXTargetDependency */,
+				101B7D3C233A798900D95D29 /* PBXTargetDependency */,
+				101B7D41233A798900D95D29 /* PBXTargetDependency */,
 			);
 			name = Modularizing;
 			productName = Modularizing;
@@ -445,6 +469,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		101B7D3C233A798900D95D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flow1;
+			targetProxy = 101B7D3B233A798900D95D29 /* PBXContainerItemProxy */;
+		};
+		101B7D41233A798900D95D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flow2;
+			targetProxy = 101B7D40233A798900D95D29 /* PBXContainerItemProxy */;
+		};
 		1033D1E423393538008AD86B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Login;
