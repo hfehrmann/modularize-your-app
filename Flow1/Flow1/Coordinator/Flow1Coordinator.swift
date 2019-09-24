@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 public protocol Flow1CoordinatorDelegate {
-    func didLogout()
+    func flow1CoordinatorGoToFlow2(nextNumberOfDisplay: Int)
+    func flow1CoordinatorDidLogout()
 }
 
 public class Flow1Coordinator {
@@ -38,7 +39,11 @@ extension Flow1Coordinator {
         self.rootController.pushViewController(controller, animated: true)
     }
 
+    func  goToFlow2(nextNumberOfDisplay: Int) {
+        self.coordinatorDelegate?.flow1CoordinatorGoToFlow2(nextNumberOfDisplay: nextNumberOfDisplay)
+    }
+
     func didLogout() {
-        self.coordinatorDelegate?.didLogout()
+        self.coordinatorDelegate?.flow1CoordinatorDidLogout()
     }
 }

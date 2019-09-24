@@ -47,7 +47,7 @@ extension Flow1ViewController: Flow1ViewDelegate {
     }
 
     func flow1ViewDidClickFlow2(_ dashboardView: Flow1View) {
-        debugPrint("Flow 2")
+        self.coordinator.goToFlow2(nextNumberOfDisplay: self.numberOfController + 1)
     }
 
     func flow1ViewDidClickLogout(_ dashboardView: Flow1View) {

@@ -39,6 +39,7 @@ extension DashboardCoordinator {
 
     func goToFlow1() {
         let coordinator = Flow1Coordinator(rootController: self.rootController)
+        coordinator.coordinatorDelegate = self
         coordinator.start()
     }
 
@@ -49,14 +50,28 @@ extension DashboardCoordinator {
     }
 }
 
+extension DashboardCoordinator: Flow1CoordinatorDelegate {
+
+    public func flow1CoordinatorGoToFlow2(nextNumberOfDisplay: Int) {
+        let coordinator = Flow2Coordinator(rootController: self.rootController, initialNumberOfController: nextNumberOfDisplay)
+        coordinator.coordinatorDelegate = self
+        coordinator.start()
+    }
+
+    public func flow1CoordinatorDidLogout() {
+        self.didLogout()
+    }
+}
+
 extension DashboardCoordinator: Flow2CoordinatorDelegate {
 
     public func flow2CoordinatorGoToFlow1(nextNumberOfDisplay: Int) {
         let coordinator = Flow1Coordinator(rootController: self.rootController, initialNumberOfController: nextNumberOfDisplay)
+        coordinator.coordinatorDelegate = self
         coordinator.start()
     }
 
     public func flow2CoordinatorDidLogout() {
-
+        self.didLogout()
     }
 }
