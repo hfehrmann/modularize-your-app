@@ -14,28 +14,36 @@ target 'Modularizing' do
 end
 
 target 'Core'do
-
     project 'Core/Core.xcodeproj'
-
 end
 
 target 'Login'do
-
     project 'Login/Login.xcodeproj'
 
     dev_pods
 end
 
 target 'Onboarding'do
-
     project 'Onboarding/Onboarding.xcodeproj'
 
     dev_pods
 end
 
 target 'Dashboard'do
-
     project 'Dashboard/Dashboard.xcodeproj'
 
     dev_pods
 end
+
+target 'Flow1' do
+    project 'Flow1/Flow1.xcodeproj'
+
+    dev_pods
+end
+
+target 'Flow2' do
+    project 'Flow2/Flow2.xcodeproj'
+
+    dev_pods
+end
+

@@ -7,4 +7,22 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Dashboard/Dashboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Flow1/Flow1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Flow2/Flow2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Login/Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Onboarding/Onboarding.xcodeproj">
+   </FileRef>
 </Workspace>

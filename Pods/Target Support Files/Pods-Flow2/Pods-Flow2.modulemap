@@ -1,0 +1,6 @@
+framework module Pods_Flow2 {
+  umbrella header "Pods-Flow2-umbrella.h"
+
+  export *
+  module * { export * }
+}

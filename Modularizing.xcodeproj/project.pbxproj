@@ -79,6 +79,20 @@
 			remoteGlobalIDString = 1033D25F2339C6E6008AD86B;
 			remoteInfo = Core;
 		};
+		103C368F233A55CB001ACB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 103C368B233A55CB001ACB39 /* Flow1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 103C3680233A55BD001ACB39;
+			remoteInfo = Flow1;
+		};
+		103C36AA233A56F1001ACB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 103C36A6233A56F1001ACB39 /* Flow2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 103C369B233A56E4001ACB39;
+			remoteInfo = Flow2;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +123,8 @@
 		1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Onboarding.xcodeproj; path = Onboarding/Onboarding.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1033D21B233941B4008AD86B /* Dashboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dashboard.xcodeproj; path = Dashboard/Dashboard.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1033D26B2339C6F4008AD86B /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = SOURCE_ROOT; };
+		103C368B233A55CB001ACB39 /* Flow1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Flow1.xcodeproj; path = Flow1/Flow1.xcodeproj; sourceTree = SOURCE_ROOT; };
+		103C36A6233A56F1001ACB39 /* Flow2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Flow2.xcodeproj; path = Flow2/Flow2.xcodeproj; sourceTree = SOURCE_ROOT; };
 		17B60EE7726185B577BFC365 /* Pods_Modularizing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modularizing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCB1115F50AF368CFC08F0F /* Pods-Modularizing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modularizing.release.xcconfig"; path = "Target Support Files/Pods-Modularizing/Pods-Modularizing.release.xcconfig"; sourceTree = "<group>"; };
 		3178F808A305BAF6427C1C08 /* Pods-Modularizing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modularizing.debug.xcconfig"; path = "Target Support Files/Pods-Modularizing/Pods-Modularizing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,9 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				1033D26B2339C6F4008AD86B /* Core.xcodeproj */,
+				1033D21B233941B4008AD86B /* Dashboard.xcodeproj */,
+				103C368B233A55CB001ACB39 /* Flow1.xcodeproj */,
+				103C36A6233A56F1001ACB39 /* Flow2.xcodeproj */,
 				1033D1D6233934EC008AD86B /* Login.xcodeproj */,
 				1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */,
-				1033D21B233941B4008AD86B /* Dashboard.xcodeproj */,
 				1033D15F2331AD05008AD86B /* AppDelegate.swift */,
 				1033D17A2331AE17008AD86B /* AppCoordinator.swift */,
 				1033D1662331AD08008AD86B /* Assets.xcassets */,
@@ -192,6 +210,22 @@
 			isa = PBXGroup;
 			children = (
 				1033D2702339C6F4008AD86B /* Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		103C368C233A55CB001ACB39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				103C3690233A55CB001ACB39 /* Flow1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		103C36A7233A56F1001ACB39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				103C36AB233A56F1001ACB39 /* Flow2.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +310,14 @@
 					ProjectRef = 1033D21B233941B4008AD86B /* Dashboard.xcodeproj */;
 				},
 				{
+					ProductGroup = 103C368C233A55CB001ACB39 /* Products */;
+					ProjectRef = 103C368B233A55CB001ACB39 /* Flow1.xcodeproj */;
+				},
+				{
+					ProductGroup = 103C36A7233A56F1001ACB39 /* Products */;
+					ProjectRef = 103C36A6233A56F1001ACB39 /* Flow2.xcodeproj */;
+				},
+				{
 					ProductGroup = 1033D1D7233934EC008AD86B /* Products */;
 					ProjectRef = 1033D1D6233934EC008AD86B /* Login.xcodeproj */;
 				},
@@ -318,6 +360,20 @@
 			fileType = wrapper.framework;
 			path = Core.framework;
 			remoteRef = 1033D26F2339C6F4008AD86B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		103C3690233A55CB001ACB39 /* Flow1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Flow1.framework;
+			remoteRef = 103C368F233A55CB001ACB39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		103C36AB233A56F1001ACB39 /* Flow2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Flow2.framework;
+			remoteRef = 103C36AA233A56F1001ACB39 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
