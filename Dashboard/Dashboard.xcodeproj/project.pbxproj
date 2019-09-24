@@ -11,6 +11,7 @@
 		1033D223233941C5008AD86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D222233941C5008AD86B /* DashboardCoordinator.swift */; };
 		1033D2522339C047008AD86B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D2512339C047008AD86B /* DashboardView.swift */; };
 		1033D2552339C27D008AD86B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D2542339C27D008AD86B /* DashboardViewController.swift */; };
+		1033D27B2339C928008AD86B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D27A2339C928008AD86B /* Core.framework */; };
 		6F051F7B57516001D78BC01F /* Pods_Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0574707A94430742EEB424E4 /* Pods_Dashboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		1033D222233941C5008AD86B /* DashboardCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 		1033D2512339C047008AD86B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		1033D2542339C27D008AD86B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1033D27A2339C928008AD86B /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883CCAC073B67AC47BDC1879 /* Pods-Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.release.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.release.xcconfig"; sourceTree = "<group>"; };
 		8A39DE0E8588B4750C9F1A51 /* Pods-Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.debug.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1033D27B2339C928008AD86B /* Core.framework in Frameworks */,
 				6F051F7B57516001D78BC01F /* Pods_Dashboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +124,7 @@
 		839BAE03574122E6D498F67D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1033D27A2339C928008AD86B /* Core.framework */,
 				0574707A94430742EEB424E4 /* Pods_Dashboard.framework */,
 			);
 			name = Frameworks;

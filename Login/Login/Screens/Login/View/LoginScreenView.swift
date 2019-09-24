@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import Core
 
 protocol LoginScreenViewDelegate: AnyObject {
     func loginScreenViewDelegate(_ loginScreenView: LoginScreenView, name: String, password: String)
@@ -38,7 +39,7 @@ class LoginScreenView: UIView {
         button.addTarget(self, action: #selector(didClickSend), for: .touchUpInside)
         button.setTitle("Send", for: .normal)
         button.layer.cornerRadius = 5
-        button.backgroundColor = UIColor(displayP3Red: 0.22, green: 0.57, blue: 0.97, alpha: 1)
+        button.backgroundColor = .lightningBlue
         return button
     }()
 

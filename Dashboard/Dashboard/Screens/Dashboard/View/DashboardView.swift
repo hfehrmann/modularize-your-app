@@ -9,31 +9,42 @@
 import Foundation
 import UIKit
 import SnapKit
+import Core
 
 class DashboardView: UIView {
+
+    private enum Constraints {
+        static var rounderCorner: CGFloat { return 4 }
+    }
 
     private lazy var stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
-        view.spacing = 2
+        view.spacing = 10
         return view
     }()
 
     private lazy var flow1: UIButton = {
         let button = UIButton()
         button.setTitle("Flow 1", for: .normal)
+        button.backgroundColor = .lightningBlue
+        button.layer.cornerRadius = Constraints.rounderCorner
         return button
     }()
 
     private lazy var flow2: UIButton = {
         let button = UIButton()
         button.setTitle("Flow 2", for: .normal)
+        button.backgroundColor = .lightningBlue
+        button.layer.cornerRadius = Constraints.rounderCorner
         return button
     }()
 
     private lazy var logoutButton: UIButton = {
         let button = UIButton()
         button.setTitle("Logout", for: .normal)
+        button.backgroundColor = .lightningBlue
+        button.layer.cornerRadius = Constraints.rounderCorner
         return button
     }()
 
@@ -61,6 +72,7 @@ private extension DashboardView {
         self.stackView.snp.makeConstraints { maker in
             maker.bottomMargin.equalToSuperview().offset(-20)
             maker.centerX.equalToSuperview()
+            maker.width.equalToSuperview().multipliedBy(0.7)
         }
     }
 }

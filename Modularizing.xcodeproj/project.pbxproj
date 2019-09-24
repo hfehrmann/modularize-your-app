@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,13 @@
 			remoteGlobalIDString = 1033D20F2339417B008AD86B;
 			remoteInfo = Dashboard;
 		};
+		1033D26F2339C6F4008AD86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D26B2339C6F4008AD86B /* Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1033D2602339C6E6008AD86B;
+			remoteInfo = Core;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +98,7 @@
 		1033D1D6233934EC008AD86B /* Login.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Login.xcodeproj; path = Login/Login.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Onboarding.xcodeproj; path = Onboarding/Onboarding.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1033D21B233941B4008AD86B /* Dashboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dashboard.xcodeproj; path = Dashboard/Dashboard.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1033D26B2339C6F4008AD86B /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		17B60EE7726185B577BFC365 /* Pods_Modularizing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modularizing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCB1115F50AF368CFC08F0F /* Pods-Modularizing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modularizing.release.xcconfig"; path = "Target Support Files/Pods-Modularizing/Pods-Modularizing.release.xcconfig"; sourceTree = "<group>"; };
 		3178F808A305BAF6427C1C08 /* Pods-Modularizing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modularizing.debug.xcconfig"; path = "Target Support Files/Pods-Modularizing/Pods-Modularizing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 		1033D15E2331AD05008AD86B /* Modularizing */ = {
 			isa = PBXGroup;
 			children = (
+				1033D26B2339C6F4008AD86B /* Core.xcodeproj */,
 				1033D1D6233934EC008AD86B /* Login.xcodeproj */,
 				1033D1FB233940FC008AD86B /* Onboarding.xcodeproj */,
 				1033D21B233941B4008AD86B /* Dashboard.xcodeproj */,
@@ -168,6 +177,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1033D26C2339C6F4008AD86B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1033D2702339C6F4008AD86B /* Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9672EAE6EEA746139B512CD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +199,6 @@
 				3178F808A305BAF6427C1C08 /* Pods-Modularizing.debug.xcconfig */,
 				2CCB1115F50AF368CFC08F0F /* Pods-Modularizing.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,6 +256,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 1033D26C2339C6F4008AD86B /* Products */;
+					ProjectRef = 1033D26B2339C6F4008AD86B /* Core.xcodeproj */;
+				},
+				{
 					ProductGroup = 1033D21C233941B4008AD86B /* Products */;
 					ProjectRef = 1033D21B233941B4008AD86B /* Dashboard.xcodeproj */;
 				},
@@ -279,6 +299,13 @@
 			fileType = wrapper.framework;
 			path = Dashboard.framework;
 			remoteRef = 1033D21F233941B4008AD86B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1033D2702339C6F4008AD86B /* Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Core.framework;
+			remoteRef = 1033D26F2339C6F4008AD86B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

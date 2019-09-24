@@ -11,6 +11,7 @@
 		1033D1E02339351F008AD86B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D1DF2339351F008AD86B /* LoginCoordinator.swift */; };
 		1033D22F23394C2D008AD86B /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D22E23394C2D008AD86B /* LoginScreenViewController.swift */; };
 		1033D23323394D31008AD86B /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D23223394D31008AD86B /* LoginScreenView.swift */; };
+		1033D2752339C819008AD86B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D2742339C819008AD86B /* Core.framework */; };
 		4B1D94968BF9DBC6859C1A42 /* Pods_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05268F6CA00F527321D12C7 /* Pods_Login.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		1033D1DF2339351F008AD86B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1033D22E23394C2D008AD86B /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		1033D23223394D31008AD86B /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		1033D2742339C819008AD86B /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FCC8DB51D373C5AC379C6F /* Pods-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login.release.xcconfig"; path = "Target Support Files/Pods-Login/Pods-Login.release.xcconfig"; sourceTree = "<group>"; };
 		E05268F6CA00F527321D12C7 /* Pods_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1033D2752339C819008AD86B /* Core.framework in Frameworks */,
 				4B1D94968BF9DBC6859C1A42 /* Pods_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +124,7 @@
 		D0A40B504047CE9190D38FED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1033D2742339C819008AD86B /* Core.framework */,
 				E05268F6CA00F527321D12C7 /* Pods_Login.framework */,
 			);
 			name = Frameworks;
