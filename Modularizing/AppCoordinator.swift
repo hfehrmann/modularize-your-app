@@ -45,6 +45,7 @@ extension AppCoordinator: DashboardCoordinatorDelegate {
 
     func didLogout() {
         self.window.rootViewController?.dismiss(animated: false)
+        self.window.backgroundColor = .white
         self.start()
     }
 }

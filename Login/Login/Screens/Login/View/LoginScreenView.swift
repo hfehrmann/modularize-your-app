@@ -17,6 +17,14 @@ protocol LoginScreenViewDelegate: AnyObject {
 
 class LoginScreenView: UIView {
 
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.text = "Modularizing your App"
+        label.font = .systemFont(ofSize: 20, weight: .medium)
+        return label
+    }()
+
     private lazy var nameInput: UITextField = {
         let textField = UITextField()
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -61,28 +69,36 @@ private extension LoginScreenView {
     func configureView() {
         self.backgroundColor = .white
 
-        self.addSubview(nameInput)
-        self.addSubview(passwordInput)
-        self.addSubview(sendButton)
+        self.addSubview(self.titleLabel)
+        self.addSubview(self.nameInput)
+        self.addSubview(self.passwordInput)
+        self.addSubview(self.sendButton)
 
         let height: CGFloat = 30
         let offset: CGFloat = 10
         let viewMultiply: CGFloat = 0.7
-        passwordInput.snp.makeConstraints { maker in
+
+        self.titleLabel.snp.makeConstraints { maker in
+            maker.top.equalTo(self.snp.topMargin).offset(50)
+            maker.centerX.equalToSuperview()
+            maker.width.equalToSuperview()
+        }
+
+        self.passwordInput.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.centerY.equalToSuperview()
             maker.height.equalTo(height)
             maker.width.equalToSuperview().multipliedBy(viewMultiply)
         }
 
-        nameInput.snp.makeConstraints { maker in
+        self.nameInput.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.height.equalTo(height)
             maker.bottom.equalTo(passwordInput.snp.top).offset(-offset)
             maker.width.equalToSuperview().multipliedBy(viewMultiply)
         }
 
-        sendButton.snp.makeConstraints { maker in
+        self.sendButton.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.height.equalTo(height)
             maker.top.equalTo(passwordInput.snp.bottom).offset(offset)
@@ -92,8 +108,8 @@ private extension LoginScreenView {
 
     @objc
     func didClickSend() {
-        let name = nameInput.text ?? ""
-        let password = passwordInput.text ?? ""
-        delegate?.loginScreenViewDelegate(self, name: name, password: password)
+        let name = self.nameInput.text ?? ""
+        let password = self.passwordInput.text ?? ""
+        self.delegate?.loginScreenViewDelegate(self, name: name, password: password)
     }
 }
