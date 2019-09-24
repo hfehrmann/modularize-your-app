@@ -41,7 +41,7 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: DashboardViewDelegate {
 
     func dashboardViewDidClickFlow1(_ dashboardView: DashboardView) {
-        debugPrint("Flow 1")
+        self.coordinator.goToFlow1()
     }
 
     func dashboardViewDidClickFlow2(_ dashboardView: DashboardView) {

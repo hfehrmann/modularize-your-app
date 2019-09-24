@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		101B7D11233A5A4700D95D29 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D0A233A5A4700D95D29 /* DashboardCoordinator.swift */; };
-		101B7D12233A5A4700D95D29 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D0E233A5A4700D95D29 /* DashboardViewController.swift */; };
-		101B7D13233A5A4700D95D29 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D10233A5A4700D95D29 /* DashboardView.swift */; };
+		101B7D11233A5A4700D95D29 /* Flow1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D0A233A5A4700D95D29 /* Flow1Coordinator.swift */; };
+		101B7D12233A5A4700D95D29 /* Flow1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D0E233A5A4700D95D29 /* Flow1ViewController.swift */; };
+		101B7D13233A5A4700D95D29 /* Flow1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D10233A5A4700D95D29 /* Flow1View.swift */; };
 		103C3685233A55BD001ACB39 /* Flow1.h in Headers */ = {isa = PBXBuildFile; fileRef = 103C3683233A55BD001ACB39 /* Flow1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		628E7DE268399AC969D922A9 /* Pods_Flow1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC250BA705962FC51912D5C /* Pods_Flow1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		101B7D0A233A5A4700D95D29 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
-		101B7D0E233A5A4700D95D29 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		101B7D10233A5A4700D95D29 /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		101B7D0A233A5A4700D95D29 /* Flow1Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1Coordinator.swift; sourceTree = "<group>"; };
+		101B7D0E233A5A4700D95D29 /* Flow1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1ViewController.swift; sourceTree = "<group>"; };
+		101B7D10233A5A4700D95D29 /* Flow1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1View.swift; sourceTree = "<group>"; };
 		103C3680233A55BD001ACB39 /* Flow1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		103C3683233A55BD001ACB39 /* Flow1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow1.h; sourceTree = "<group>"; };
 		103C3684233A55BD001ACB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		101B7D09233A5A4700D95D29 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D0A233A5A4700D95D29 /* DashboardCoordinator.swift */,
+				101B7D0A233A5A4700D95D29 /* Flow1Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 		101B7D0D233A5A4700D95D29 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D0E233A5A4700D95D29 /* DashboardViewController.swift */,
+				101B7D0E233A5A4700D95D29 /* Flow1ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 		101B7D0F233A5A4700D95D29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D10233A5A4700D95D29 /* DashboardView.swift */,
+				101B7D10233A5A4700D95D29 /* Flow1View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101B7D11233A5A4700D95D29 /* DashboardCoordinator.swift in Sources */,
-				101B7D13233A5A4700D95D29 /* DashboardView.swift in Sources */,
-				101B7D12233A5A4700D95D29 /* DashboardViewController.swift in Sources */,
+				101B7D11233A5A4700D95D29 /* Flow1Coordinator.swift in Sources */,
+				101B7D13233A5A4700D95D29 /* Flow1View.swift in Sources */,
+				101B7D12233A5A4700D95D29 /* Flow1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

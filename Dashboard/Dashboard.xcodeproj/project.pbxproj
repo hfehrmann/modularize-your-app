@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101B7D20233A5CA900D95D29 /* Flow1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101B7D1F233A5CA900D95D29 /* Flow1.framework */; };
+		101B7D22233A5CA900D95D29 /* Flow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101B7D21233A5CA900D95D29 /* Flow2.framework */; };
 		1033D2152339417B008AD86B /* Dashboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1033D2132339417B008AD86B /* Dashboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1033D223233941C5008AD86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D222233941C5008AD86B /* DashboardCoordinator.swift */; };
 		1033D2522339C047008AD86B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D2512339C047008AD86B /* DashboardView.swift */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0574707A94430742EEB424E4 /* Pods_Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101B7D1F233A5CA900D95D29 /* Flow1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flow1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101B7D21233A5CA900D95D29 /* Flow2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flow2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1033D2102339417B008AD86B /* Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1033D2132339417B008AD86B /* Dashboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
 		1033D2142339417B008AD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101B7D20233A5CA900D95D29 /* Flow1.framework in Frameworks */,
+				101B7D22233A5CA900D95D29 /* Flow2.framework in Frameworks */,
 				1033D27B2339C928008AD86B /* Core.framework in Frameworks */,
 				6F051F7B57516001D78BC01F /* Pods_Dashboard.framework in Frameworks */,
 			);
@@ -124,6 +130,8 @@
 		839BAE03574122E6D498F67D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				101B7D1F233A5CA900D95D29 /* Flow1.framework */,
+				101B7D21233A5CA900D95D29 /* Flow2.framework */,
 				1033D27A2339C928008AD86B /* Core.framework */,
 				0574707A94430742EEB424E4 /* Pods_Dashboard.framework */,
 			);

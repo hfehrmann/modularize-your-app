@@ -25,7 +25,9 @@ class Flow1View: UIView {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Flow1 Nº \(1)"
+        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.textAlignment = .center
+        label.text = "Flow1 -> Nº \(self.numberToDisplay)"
         return label
     }()
 
@@ -63,9 +65,11 @@ class Flow1View: UIView {
         return button
     }()
 
+    private let numberToDisplay: Int
     weak var delegate: Flow1ViewDelegate?
 
-    init() {
+    init(numberToDisplay: Int) {
+        self.numberToDisplay = numberToDisplay
         super.init(frame: .zero)
         configureView()
     }
@@ -102,12 +106,18 @@ private extension Flow1View {
 private extension Flow1View {
 
     func configureView() {
-        self.backgroundColor = .gray95
+        self.backgroundColor = .flow1
 
-        self.addSubview(stackView)
+        self.addSubview(self.titleLabel)
+        self.addSubview(self.stackView)
         self.stackView.addArrangedSubview(self.flow1)
         self.stackView.addArrangedSubview(self.flow2)
         self.stackView.addArrangedSubview(self.logoutButton)
+
+        self.titleLabel.snp.makeConstraints { maker in
+            maker.centerXWithinMargins.equalToSuperview()
+            maker.topMargin.equalToSuperview().offset(30)
+        }
 
         self.stackView.snp.makeConstraints { maker in
             maker.bottomMargin.equalToSuperview().offset(-20)

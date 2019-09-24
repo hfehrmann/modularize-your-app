@@ -24,12 +24,17 @@ public class Flow1Coordinator {
     }
 
     public func start() {
-        let controller = Flow1ViewController(coordinator: self)
-        self.rootController.pushViewController(controller, animated: false)
+        let controller = Flow1ViewController(coordinator: self, numberOfController: 1)
+        self.rootController.pushViewController(controller, animated: true)
     }
 }
 
 extension Flow1Coordinator {
+
+    func  goToFlow1(nextNumberOfDisplay: Int) {
+        let controller = Flow1ViewController(coordinator: self, numberOfController: nextNumberOfDisplay)
+        self.rootController.pushViewController(controller, animated: true)
+    }
 
     func didLogout() {
         self.coordinatorDelegate?.didLogout()
