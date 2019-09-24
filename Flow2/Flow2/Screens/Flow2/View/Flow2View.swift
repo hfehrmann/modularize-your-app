@@ -12,12 +12,12 @@ import SnapKit
 import Core
 
 protocol Flow1ViewDelegate: AnyObject {
-    func flow1ViewDidClickFlow1(_ dashboardView: Flow1View)
-    func flow1ViewDidClickFlow2(_ dashboardView: Flow1View)
-    func flow1ViewDidClickLogout(_ dashboardView: Flow1View)
+    func flow1ViewDidClickFlow1(_ dashboardView: Flow2View)
+    func flow1ViewDidClickFlow2(_ dashboardView: Flow2View)
+    func flow1ViewDidClickLogout(_ dashboardView: Flow2View)
 }
 
-class Flow1View: UIView {
+class Flow2View: UIView {
 
     private enum Constraints {
         static var rounderCorner: CGFloat { return 4 }
@@ -82,7 +82,7 @@ class Flow1View: UIView {
 
 // MARK: - Button targets
 
-private extension Flow1View {
+private extension Flow2View {
 
     @objc
     func didClickFlow1() {
@@ -103,10 +103,10 @@ private extension Flow1View {
 
 // MARK: - View Configuration
 
-private extension Flow1View {
+private extension Flow2View {
 
     func configureView() {
-        self.backgroundColor = .flow1
+        self.backgroundColor = .flow2
 
         self.addSubview(self.titleLabel)
         self.addSubview(self.stackView)

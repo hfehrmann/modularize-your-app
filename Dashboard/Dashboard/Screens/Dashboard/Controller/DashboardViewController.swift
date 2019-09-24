@@ -45,7 +45,7 @@ extension DashboardViewController: DashboardViewDelegate {
     }
 
     func dashboardViewDidClickFlow2(_ dashboardView: DashboardView) {
-        debugPrint("Flow 2")
+        self.coordinator.goToFlow2()
     }
 
     func dashboardViewDidClickLogout(_ dashboardView: DashboardView) {

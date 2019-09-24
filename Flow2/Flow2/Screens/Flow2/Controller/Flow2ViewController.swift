@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-class Flow1ViewController: UIViewController {
+class Flow2ViewController: UIViewController {
 
-    private lazy var flow1View: Flow1View = {
-        let view = Flow1View(numberToDisplay: self.numberOfController)
+    private lazy var flow1View: Flow2View = {
+        let view = Flow2View(numberToDisplay: self.numberOfController)
         view.delegate = self
         return view
     }()
 
     private let numberOfController: Int
-    private let coordinator: Flow1Coordinator
+    private let coordinator: Flow2Coordinator
 
-    init(coordinator: Flow1Coordinator, numberOfController: Int) {
+    init(coordinator: Flow2Coordinator, numberOfController: Int) {
         self.numberOfController = numberOfController
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
@@ -40,17 +40,17 @@ class Flow1ViewController: UIViewController {
     }
 }
 
-extension Flow1ViewController: Flow1ViewDelegate {
+extension Flow2ViewController: Flow1ViewDelegate {
 
-    func flow1ViewDidClickFlow1(_ dashboardView: Flow1View) {
+    func flow1ViewDidClickFlow1(_ dashboardView: Flow2View) {
         self.coordinator.goToFlow1(nextNumberOfDisplay: self.numberOfController + 1)
     }
 
-    func flow1ViewDidClickFlow2(_ dashboardView: Flow1View) {
-        debugPrint("Flow 2")
+    func flow1ViewDidClickFlow2(_ dashboardView: Flow2View) {
+        self.coordinator.goToFlow2(nextNumberOfDisplay: self.numberOfController + 1)
     }
 
-    func flow1ViewDidClickLogout(_ dashboardView: Flow1View) {
+    func flow1ViewDidClickLogout(_ dashboardView: Flow2View) {
         self.coordinator.didLogout()
     }
 }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Flow1
+import Flow2
 
 public protocol DashboardCoordinatorDelegate {
     func didLogout()
@@ -42,6 +43,20 @@ extension DashboardCoordinator {
     }
 
     func goToFlow2() {
+        let coordinator = Flow2Coordinator(rootController: self.rootController)
+        coordinator.coordinatorDelegate = self
+        coordinator.start()
+    }
+}
+
+extension DashboardCoordinator: Flow2CoordinatorDelegate {
+
+    public func flow2CoordinatorGoToFlow1(nextNumberOfDisplay: Int) {
+        let coordinator = Flow1Coordinator(rootController: self.rootController, initialNumberOfController: nextNumberOfDisplay)
+        coordinator.start()
+    }
+
+    public func flow2CoordinatorDidLogout() {
 
     }
 }

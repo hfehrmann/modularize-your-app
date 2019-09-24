@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		101B7D31233A657A00D95D29 /* Flow1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2C233A657A00D95D29 /* Flow1ViewController.swift */; };
-		101B7D32233A657A00D95D29 /* Flow1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2E233A657A00D95D29 /* Flow1View.swift */; };
-		101B7D33233A657A00D95D29 /* Flow1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D30233A657A00D95D29 /* Flow1Coordinator.swift */; };
+		101B7D31233A657A00D95D29 /* Flow2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2C233A657A00D95D29 /* Flow2ViewController.swift */; };
+		101B7D32233A657A00D95D29 /* Flow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D2E233A657A00D95D29 /* Flow2View.swift */; };
+		101B7D33233A657A00D95D29 /* Flow2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B7D30233A657A00D95D29 /* Flow2Coordinator.swift */; };
 		103C36A0233A56E5001ACB39 /* Flow2.h in Headers */ = {isa = PBXBuildFile; fileRef = 103C369E233A56E4001ACB39 /* Flow2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F988E66F7BDB115CD463D06 /* Pods_Flow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58845E47C05D6FBA91B336DA /* Pods_Flow2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		101B7D2C233A657A00D95D29 /* Flow1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1ViewController.swift; sourceTree = "<group>"; };
-		101B7D2E233A657A00D95D29 /* Flow1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1View.swift; sourceTree = "<group>"; };
-		101B7D30233A657A00D95D29 /* Flow1Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow1Coordinator.swift; sourceTree = "<group>"; };
+		101B7D2C233A657A00D95D29 /* Flow2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2ViewController.swift; sourceTree = "<group>"; };
+		101B7D2E233A657A00D95D29 /* Flow2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2View.swift; sourceTree = "<group>"; };
+		101B7D30233A657A00D95D29 /* Flow2Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow2Coordinator.swift; sourceTree = "<group>"; };
 		103C369B233A56E4001ACB39 /* Flow2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		103C369E233A56E4001ACB39 /* Flow2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow2.h; sourceTree = "<group>"; };
 		103C369F233A56E5001ACB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,24 +41,24 @@
 		101B7D29233A657A00D95D29 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D2A233A657A00D95D29 /* Flow1 */,
+				101B7D2A233A657A00D95D29 /* Flow2 */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		101B7D2A233A657A00D95D29 /* Flow1 */ = {
+		101B7D2A233A657A00D95D29 /* Flow2 */ = {
 			isa = PBXGroup;
 			children = (
 				101B7D2B233A657A00D95D29 /* Controller */,
 				101B7D2D233A657A00D95D29 /* View */,
 			);
-			path = Flow1;
+			path = Flow2;
 			sourceTree = "<group>";
 		};
 		101B7D2B233A657A00D95D29 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D2C233A657A00D95D29 /* Flow1ViewController.swift */,
+				101B7D2C233A657A00D95D29 /* Flow2ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 		101B7D2D233A657A00D95D29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D2E233A657A00D95D29 /* Flow1View.swift */,
+				101B7D2E233A657A00D95D29 /* Flow2View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 		101B7D2F233A657A00D95D29 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				101B7D30233A657A00D95D29 /* Flow1Coordinator.swift */,
+				101B7D30233A657A00D95D29 /* Flow2Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101B7D32233A657A00D95D29 /* Flow1View.swift in Sources */,
-				101B7D31233A657A00D95D29 /* Flow1ViewController.swift in Sources */,
-				101B7D33233A657A00D95D29 /* Flow1Coordinator.swift in Sources */,
+				101B7D32233A657A00D95D29 /* Flow2View.swift in Sources */,
+				101B7D31233A657A00D95D29 /* Flow2ViewController.swift in Sources */,
+				101B7D33233A657A00D95D29 /* Flow2Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
