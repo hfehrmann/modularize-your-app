@@ -13,6 +13,12 @@ target 'Modularizing' do
     dev_pods
 end
 
+target 'Core'do
+
+    project 'Core/Core.xcodeproj'
+
+end
+
 target 'Login'do
 
     project 'Login/Login.xcodeproj'

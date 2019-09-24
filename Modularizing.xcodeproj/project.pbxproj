@@ -17,6 +17,8 @@
 		1033D22523394264008AD86B /* Onboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D200233940FC008AD86B /* Onboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1033D22823394264008AD86B /* Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D220233941B4008AD86B /* Dashboard.framework */; };
 		1033D22923394264008AD86B /* Dashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D220233941B4008AD86B /* Dashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		103C36582339CE7F001ACB39 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D2702339C6F4008AD86B /* Core.framework */; };
+		103C36592339CE7F001ACB39 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1033D2702339C6F4008AD86B /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF543BA52EE1A7565A1DB219 /* Pods_Modularizing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B60EE7726185B577BFC365 /* Pods_Modularizing.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,13 @@
 			remoteGlobalIDString = 1033D2602339C6E6008AD86B;
 			remoteInfo = Core;
 		};
+		103C365A2339CE7F001ACB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1033D26B2339C6F4008AD86B /* Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1033D25F2339C6E6008AD86B;
+			remoteInfo = Core;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +91,7 @@
 				1033D22923394264008AD86B /* Dashboard.framework in Embed Frameworks */,
 				1033D1E223393538008AD86B /* Login.framework in Embed Frameworks */,
 				1033D22523394264008AD86B /* Onboarding.framework in Embed Frameworks */,
+				103C36592339CE7F001ACB39 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +122,7 @@
 				1033D22823394264008AD86B /* Dashboard.framework in Frameworks */,
 				1033D1E123393538008AD86B /* Login.framework in Frameworks */,
 				1033D22423394264008AD86B /* Onboarding.framework in Frameworks */,
+				103C36582339CE7F001ACB39 /* Core.framework in Frameworks */,
 				DF543BA52EE1A7565A1DB219 /* Pods_Modularizing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +233,7 @@
 				1033D1E423393538008AD86B /* PBXTargetDependency */,
 				1033D22723394264008AD86B /* PBXTargetDependency */,
 				1033D22B23394264008AD86B /* PBXTargetDependency */,
+				103C365B2339CE7F001ACB39 /* PBXTargetDependency */,
 			);
 			name = Modularizing;
 			productName = Modularizing;
@@ -391,6 +403,11 @@
 			isa = PBXTargetDependency;
 			name = Dashboard;
 			targetProxy = 1033D22A23394264008AD86B /* PBXContainerItemProxy */;
+		};
+		103C365B2339CE7F001ACB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Core;
+			targetProxy = 103C365A2339CE7F001ACB39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
