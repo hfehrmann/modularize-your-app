@@ -15,6 +15,7 @@ class LoginScreenViewController: UIViewController {
 
     private lazy var loginScreenView: LoginScreenView = {
         let view = LoginScreenView()
+        view.delegate = self
         return view
     }()
 
@@ -32,4 +33,13 @@ class LoginScreenViewController: UIViewController {
         self.view = self.loginScreenView
     }
 
+}
+
+extension LoginScreenViewController: LoginScreenViewDelegate {
+
+    func loginScreenViewDelegate(_ loginScreenView: LoginScreenView, name: String, password: String) {
+        debugPrint(name)
+        debugPrint(password)
+        coordinator.didLogin()
+    }
 }

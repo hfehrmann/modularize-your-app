@@ -9,15 +9,20 @@
 import Foundation
 import UIKit
 
+protocol DashboardCoordinatorDelegate {
+
+}
+
 class DashboardCoordinator {
 
-    let rootController: UIViewController
+    let rootController: UINavigationController
 
-    init(controller: UIViewController) {
+    init(controller: UINavigationController) {
         self.rootController = controller
     }
 
     func start() {
-
+        let controller = UIViewController()
+        self.rootController.pushViewController(controller, animated: false)
     }
 }

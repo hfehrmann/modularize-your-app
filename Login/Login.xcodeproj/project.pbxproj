@@ -69,8 +69,8 @@
 		1033D1CC233934BF008AD86B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1033D24D2339BDDD008AD86B /* Screens */,
 				1033D1DC233934F5008AD86B /* Coordinator */,
-				1033D22C23394BF8008AD86B /* Login */,
 				1033D1CD233934BF008AD86B /* Login.h */,
 				1033D1CE233934BF008AD86B /* Info.plist */,
 			);
@@ -108,6 +108,14 @@
 				1033D23223394D31008AD86B /* LoginScreenView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1033D24D2339BDDD008AD86B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1033D22C23394BF8008AD86B /* Login */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		D0A40B504047CE9190D38FED /* Frameworks */ = {

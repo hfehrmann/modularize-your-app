@@ -9,9 +9,15 @@
 import Foundation
 import UIKit
 
+public protocol LoginCoordinatorDelegate {
+    func didLogin()
+}
+
 public class LoginCoordinator {
 
-    let rootController: UIViewController
+    public var coordinatorDelegate: LoginCoordinatorDelegate?
+
+    private let rootController: UIViewController
 
     public init(controller: UIViewController) {
         self.rootController = controller
@@ -19,6 +25,13 @@ public class LoginCoordinator {
 
     public func start() {
         let loginController = LoginScreenViewController(coordinator: self)
-        rootController.present(loginController, animated: true)
+        self.rootController.present(loginController, animated: true)
+    }
+}
+
+extension LoginCoordinator {
+
+    func didLogin() {
+        self.coordinatorDelegate?.didLogin()
     }
 }

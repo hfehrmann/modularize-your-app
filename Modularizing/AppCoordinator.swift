@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 import Login
 
+
 class AppCoordinator {
 
     let window: UIWindow
-    var loginCoordinator: LoginCoordinator?
 
     init(window: UIWindow) {
         self.window = window
@@ -22,8 +22,17 @@ class AppCoordinator {
     func start() {
         let controller = UIViewController()
         let loginCoordinator = LoginCoordinator(controller: controller)
+        loginCoordinator.coordinatorDelegate = self
         self.window.rootViewController = controller
         self.window.makeKeyAndVisible()
         loginCoordinator.start()
+    }
+}
+
+extension AppCoordinator: LoginCoordinatorDelegate {
+
+    func didLogin() {
+        let navigationController = UINavigationController()
+        self.window.rootViewController = navigationController
     }
 }
