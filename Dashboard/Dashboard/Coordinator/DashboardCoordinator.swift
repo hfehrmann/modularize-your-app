@@ -9,20 +9,29 @@
 import Foundation
 import UIKit
 
-protocol DashboardCoordinatorDelegate {
-
+public protocol DashboardCoordinatorDelegate {
+    func didLogout()
 }
 
 public class DashboardCoordinator {
 
-    let rootController: UINavigationController
+    public var coordinatorDelegate: DashboardCoordinatorDelegate?
+
+    private unowned let rootController: UINavigationController
 
     public init(rootController: UINavigationController) {
         self.rootController = rootController
     }
 
     public func start() {
-        let controller = DashboardViewController()
+        let controller = DashboardViewController(coordinator: self)
         self.rootController.pushViewController(controller, animated: false)
+    }
+}
+
+extension DashboardCoordinator {
+
+    func didLogout() {
+        self.coordinatorDelegate?.didLogout()
     }
 }

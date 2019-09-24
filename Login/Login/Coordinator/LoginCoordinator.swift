@@ -17,7 +17,7 @@ public class LoginCoordinator {
 
     public var coordinatorDelegate: LoginCoordinatorDelegate?
 
-    private let rootController: UIViewController
+    private unowned let rootController: UIViewController
 
     public init(controller: UIViewController) {
         self.rootController = controller

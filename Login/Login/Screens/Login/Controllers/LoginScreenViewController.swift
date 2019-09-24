@@ -38,8 +38,8 @@ class LoginScreenViewController: UIViewController {
 extension LoginScreenViewController: LoginScreenViewDelegate {
 
     func loginScreenViewDelegate(_ loginScreenView: LoginScreenView, name: String, password: String) {
-        debugPrint(name)
-        debugPrint(password)
+        debugPrint("username: \(name)")
+        debugPrint("password: \(password)")
         coordinator.didLogin()
     }
 }

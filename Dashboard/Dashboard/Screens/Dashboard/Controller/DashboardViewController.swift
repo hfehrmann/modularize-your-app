@@ -17,6 +17,18 @@ class DashboardViewController: UIViewController {
         return view
     }()
 
+    private let coordinator: DashboardCoordinator
+
+    init(coordinator: DashboardCoordinator) {
+        self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func loadView() {
         self.view = self.dashboardView
     }
@@ -37,8 +49,6 @@ extension DashboardViewController: DashboardViewDelegate {
     }
 
     func dashboardViewDidClickLogout(_ dashboardView: DashboardView) {
-        debugPrint("Logout")
+        self.coordinator.didLogout()
     }
-
-
 }

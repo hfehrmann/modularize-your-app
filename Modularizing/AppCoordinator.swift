@@ -32,9 +32,19 @@ class AppCoordinator {
 extension AppCoordinator: LoginCoordinatorDelegate {
 
     func didLogin() {
+        self.window.rootViewController?.dismiss(animated: false)
         let navigationController = UINavigationController()
         let dashboardCoordinator = DashboardCoordinator(rootController: navigationController)
+        dashboardCoordinator.coordinatorDelegate = self
         self.window.rootViewController = navigationController
         dashboardCoordinator.start()
+    }
+}
+
+extension AppCoordinator: DashboardCoordinatorDelegate {
+
+    func didLogout() {
+        self.window.rootViewController?.dismiss(animated: false)
+        self.start()
     }
 }
