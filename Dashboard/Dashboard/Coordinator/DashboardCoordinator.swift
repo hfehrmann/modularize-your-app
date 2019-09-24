@@ -13,16 +13,16 @@ protocol DashboardCoordinatorDelegate {
 
 }
 
-class DashboardCoordinator {
+public class DashboardCoordinator {
 
     let rootController: UINavigationController
 
-    init(controller: UINavigationController) {
-        self.rootController = controller
+    public init(rootController: UINavigationController) {
+        self.rootController = rootController
     }
 
-    func start() {
-        let controller = UIViewController()
+    public func start() {
+        let controller = DashboardViewController()
         self.rootController.pushViewController(controller, animated: false)
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import Login
-
+import Dashboard
 
 class AppCoordinator {
 
@@ -33,6 +33,8 @@ extension AppCoordinator: LoginCoordinatorDelegate {
 
     func didLogin() {
         let navigationController = UINavigationController()
+        let dashboardCoordinator = DashboardCoordinator(rootController: navigationController)
         self.window.rootViewController = navigationController
+        dashboardCoordinator.start()
     }
 }

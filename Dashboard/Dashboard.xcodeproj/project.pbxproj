@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1033D2152339417B008AD86B /* Dashboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1033D2132339417B008AD86B /* Dashboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1033D223233941C5008AD86B /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D222233941C5008AD86B /* DashboardCoordinator.swift */; };
+		1033D2522339C047008AD86B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D2512339C047008AD86B /* DashboardView.swift */; };
+		1033D2552339C27D008AD86B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1033D2542339C27D008AD86B /* DashboardViewController.swift */; };
 		6F051F7B57516001D78BC01F /* Pods_Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0574707A94430742EEB424E4 /* Pods_Dashboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -18,6 +20,8 @@
 		1033D2132339417B008AD86B /* Dashboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dashboard.h; sourceTree = "<group>"; };
 		1033D2142339417B008AD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1033D222233941C5008AD86B /* DashboardCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		1033D2512339C047008AD86B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		1033D2542339C27D008AD86B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		883CCAC073B67AC47BDC1879 /* Pods-Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.release.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.release.xcconfig"; sourceTree = "<group>"; };
 		8A39DE0E8588B4750C9F1A51 /* Pods-Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashboard.debug.xcconfig"; path = "Target Support Files/Pods-Dashboard/Pods-Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +59,7 @@
 		1033D2122339417B008AD86B /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				1033D24E2339BFF0008AD86B /* Screens */,
 				1033D221233941BB008AD86B /* Coordinator */,
 				1033D2132339417B008AD86B /* Dashboard.h */,
 				1033D2142339417B008AD86B /* Info.plist */,
@@ -68,6 +73,39 @@
 				1033D222233941C5008AD86B /* DashboardCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1033D24E2339BFF0008AD86B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1033D24F2339C030008AD86B /* Dashboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1033D24F2339C030008AD86B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1033D2532339C270008AD86B /* Controller */,
+				1033D2502339C038008AD86B /* View */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		1033D2502339C038008AD86B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1033D2512339C047008AD86B /* DashboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1033D2532339C270008AD86B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1033D2542339C27D008AD86B /* DashboardViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		6C866BF851AD8C160877FD96 /* Pods */ = {
@@ -193,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1033D223233941C5008AD86B /* DashboardCoordinator.swift in Sources */,
+				1033D2552339C27D008AD86B /* DashboardViewController.swift in Sources */,
+				1033D2522339C047008AD86B /* DashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
